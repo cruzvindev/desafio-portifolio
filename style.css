@@ -1,0 +1,164 @@
+body, h1, h2, p, ul, li, a {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+body {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    background-color: #1f242d;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.menu-header {
+    
+}
+
+.menu {
+    max-width: 960px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menu-logo a {
+    font-size: 1.50em;
+    color: #C0C0C0;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+    color: #C0C0C0;
+}
+
+#pagina-atual {
+    color: white;
+}
+
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    margin: 15px auto;
+    align-items: center;
+    border-top: 2px solid #323946;
+    border-bottom: 2px solid #323946;
+}
+
+.sobre-mim h1{
+    padding: 5px;
+}
+
+.minha-foto {
+   border: 2px solid white;
+   border-radius: 50%;
+}
+
+.minha-foto-div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sobre-mim {
+    margin-right: 18px;
+    font-style: italic;
+    color: white;
+}
+
+.sobre-mim a {
+    max-width: 300px;
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 2px solid #323946;
+    text-align: center;
+    color: white;
+}
+
+.habilidades {
+    width: 960px;
+    text-transform: uppercase;
+    margin: 15px auto;
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+}
+
+.especialidades {
+    width: 960px;
+    display: flex;
+    margin: 15px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.especialidades p {
+    color: white;
+}
+
+.emoji-1, .emoji-2, .emoji-3 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.desenvolvimento-apis, .desenvolvimento-landing-page, .comunicação {
+    border: 2px solid #323946;
+    margin: 10px;
+    height: 300px;
+    padding: 20px;
+}
+
+.footer {
+    display: flex;
+    height: 200px;
+   position: absolute;
+    bottom: 0px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.insta-logo, .linkedin-logo {
+    width: 30px; 
+    height: auto; 
+}
+
+.redes-sociais {
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    color: white;
+    font-size: 25px;
+}
