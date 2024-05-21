@@ -1,0 +1,179 @@
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    background-color: #1f242d;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Menu */
+
+.menu-header {
+    width: 100%;
+}
+
+.menu {
+    max-width: 960px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu-logo a {
+    font-size: 1.5em;
+    color: #C0C0C0;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+    color: #C0C0C0;
+}
+
+#pagina-atual {
+    color: white;
+}
+
+/* Minha Atuação */
+
+.experiencia-profissional {
+    max-width: 960px;
+    width: 100%;
+    margin: 50px auto 0 auto;
+    color: #C0C0C0;
+    text-align: center;
+}
+
+.atuacoes {
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+    border-top: 2px solid #323946;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.descricao {
+    color: white;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    padding: 20px;
+}
+
+.fotos {
+    margin: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 120px;
+    text-align: center;
+}
+
+#ultima-atuacao {
+    border-bottom: 2px solid #323946;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+}
+
+.insta-logo, .linkedin-logo {
+    width: 30px; 
+    height: auto; 
+}
+
+.redes-sociais {
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    color: white;
+    font-size: 25px;
+}
+
+@media (max-width: 960px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-nav a {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    .experiencia-profissional,
+    .atuacoes,
+    .descricao,
+    .fotos {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-logo a {
+        font-size: 1.2em;
+    }
+
+    .menu-nav a {
+        font-size: 1em;
+    }
+
+    .descricao {
+        font-size: 0.9em;
+    }
+
+    .footer-text {
+        font-size: 20px;
+    }
+}

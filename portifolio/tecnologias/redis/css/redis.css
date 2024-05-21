@@ -1,0 +1,174 @@
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    background-color: #1f242d;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.menu-header {
+    width: 100%;
+}
+
+.menu {
+    max-width: 960px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-logo a {
+    font-size: 1.50em;
+    color: #C0C0C0;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+    color: #C0C0C0;
+}
+
+#pagina-atual {
+    color: white;
+}
+
+/* Tecnologia */
+
+.tecnologia {
+    max-width: 960px;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px #C0C0C0 solid;
+}
+
+hr {
+    width: 80%;
+    border: 1px solid #C0C0C0;
+    margin: 20px 0;
+}
+
+h1 {
+    color: #C0C0C0;
+    margin-right: 15px;
+}
+
+li, p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.redis-limitacoes {
+    margin-left: 70px;
+}
+
+.redis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.insta-logo, .linkedin-logo {
+    width: 30px; 
+    height: auto; 
+}
+
+.redes-sociais {
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    color: white;
+    font-size: 25px;
+}
+
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .menu-nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-nav a {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+    }
+    
+    .tecnologia {
+        width: 90%;
+        margin: 20px auto;
+        border: none;
+    }
+    
+    .footer-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-logo a {
+        font-size: 1.25em;
+    }
+
+    .menu-nav a {
+        font-size: 1em;
+    }
+    
+    .tecnologia {
+        border: none;
+    }
+
+    .footer-text {
+        font-size: 16px;
+    }
+}

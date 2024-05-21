@@ -83,6 +83,7 @@ img {
 .minha-foto-div {
     margin-top: 10px;
     margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 
 .sobre-mim {
@@ -119,6 +120,23 @@ img {
     align-items: center;
 }
 
+@media (max-width: 800px) {
+    .especialidades {
+        flex-wrap: wrap;
+        width: auto;
+
+    }
+
+    .habilidades {
+        width: auto;
+    }
+
+    .sobre {
+        width: auto;
+    }
+}
+
+
 .especialidades p {
     color: white;
 }
@@ -136,14 +154,15 @@ img {
     padding: 20px;
 }
 
+/*Footer*/
+
 .footer {
     display: flex;
-    height: 200px;
-   position: absolute;
-    bottom: 0px;
+    height: 100px;
     width: 100%;
     flex-wrap: wrap;
     align-items: flex-end;
+    justify-content: center;
 }
 
 .insta-logo, .linkedin-logo {

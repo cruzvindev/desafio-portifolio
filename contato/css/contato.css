@@ -1,0 +1,174 @@
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    background-color: #1f242d;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Menu */
+
+.menu {
+    max-width: 960px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu-logo a {
+    font-size: 1.5em;
+    color: #C0C0C0;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+    color: #C0C0C0;
+}
+
+#pagina-atual {
+    color: white;
+}
+
+/* Contato */
+
+label, h1 {
+    color: white;
+}
+
+.formulario {
+    margin: 50px auto;
+    flex-wrap: wrap;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+    background-color: #1f242d;
+}
+
+.enviar {
+    display: block;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    background-color: #323946;
+    color: white;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.input-box {
+    width: 100%;
+    border: 2px solid #C0C0C0;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #2a2f3a;
+    color: white;
+    display: flex;
+    justify-content: center; /* Adicionado para centralizar conteúdo */
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+hr {
+    width: 80%;
+    border: 1px solid #C0C0C0;
+    margin: 20px 0;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociais img {
+    margin: 3px;
+    width: 30px;
+}
+
+.footer {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: auto;
+    padding: 20px;
+    background-color: #1f242d;
+}
+
+.footer-text {
+    color: white;
+    font-size: 25px;
+}
+
+@media (max-width: 800px) {
+    .formulario {
+        width: auto;
+        padding: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-nav a {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    .footer-text {
+        font-size: 20px;
+    }
+}
